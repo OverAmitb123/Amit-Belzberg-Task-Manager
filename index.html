@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="toast" class="toast"></div>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+
+    <main>
+        <section class="task-input">
+            <input type="text" id="task-text" placeholder="תיאור המשימה">
+
+            <div class="date-wrapper">
+                <input type="date" id="task-date">
+                <button type="button" id="open-date">בחר תאריך</button>
+            </div>
+
+            <button id="add-task">הוסף משימה</button>
+        </section>
+
+        <section class="filters-toggle">
+            <button id="sort-toggle">מיון</button>
+            <button id="filter-toggle">סינון</button>
+        </section>
+
+        <section class="filters">
+            <button id="filter-all">הכל</button>
+            <button id="filter-completed">הושלם</button>
+            <button id="filter-active">לא הושלם</button>
+            <button id="filter-date">לפי תאריך יעד</button>
+        </section>
+
+        <section class="task-list">
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© Amit Belzberg | כל הזכויות שמורות</p>
+    </footer>
+    <div id="toast" class="toast"></div>
+</body>
+
+</html>
